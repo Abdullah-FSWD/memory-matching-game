@@ -139,18 +139,11 @@ const ActivityScreen = () => {
 
   useEffect(() => {
     if (redChoice && blueChoice) {
-      if (step < 0) {
-        setTimeout(() => {
-          alert("Sorry, out of moves😓, try again.");
-          navigate("/outOfMoves");
-        }, 500);
-      } else {
-        setStep((prevCount) => prevCount - 1);
-      }
       if (blueChoice.content === redChoice.content) {
         if (countMatchedCards === 5) {
           setTimeout(() => {
             navigate("/completed");
+            return;
           }, 1500);
         } else {
           setCountMatchedCards((prevCount) => prevCount + 1);
@@ -173,6 +166,15 @@ const ActivityScreen = () => {
             )
           );
         }, 1000);
+      }
+      if (step < 1) {
+        setTimeout(() => {
+          alert("Sorry, out of moves😓, try again.");
+          navigate("/outOfMoves");
+          return;
+        }, 1000);
+      } else {
+        setStep((prevCount) => prevCount - 1);
       }
       setTimeout(() => {
         setRedChoice(null);

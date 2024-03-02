@@ -57,7 +57,7 @@
 }
 
 .card-img {
-  width: 150px;
+  width: 80%;
   height: 200px;
 }
 .card-grid {
@@ -85,7 +85,6 @@
 
 .card {
   position: relative;
-  draggable: false;
 }
 
 .card .front {
