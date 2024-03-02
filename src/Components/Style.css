@@ -1,9 +1,10 @@
 .bgimg1 {
-  background: url(../images/screen1.png) no-repeat center fixed;
+  background: url(../images/screen1.png);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:100% 100%;
+  background-position: center;
 }
 
 .bgimg2 {
@@ -48,12 +49,35 @@
   position: absolute;
   bottom: 5%;
   right: 7%;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
 }
+
+.moves-btn {
+  border: 5px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #5fb400;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  padding: 15px 25px;
+}
+
 .backbtn {
   width: 8%;
   position: absolute;
   top: 4%;
   left: 3%;
+  transition: all 0.3s ease;
+}
+
+.backbtn:hover {
+  padding: 10px 20px;
 }
 
 .card-img {

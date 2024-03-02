@@ -215,7 +215,7 @@ const ActivityScreen = () => {
             right: "45%",
             marginTop: "40px",
           }}>
-          <h3>Moves Left:{step + 1} </h3>
+          <h3 className="moves-btn">Moves Left:{step + 1} </h3>
         </div>
 
         <div className="card-container">
