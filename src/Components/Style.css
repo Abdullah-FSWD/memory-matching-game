@@ -1,0 +1,134 @@
+.bgimg1 {
+  background: url(../images/screen1.png) no-repeat center fixed;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bgimg2 {
+  background: url(../images/screen2.png) no-repeat center fixed;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bgimg3 {
+  background: url(../images/screen3.png) no-repeat center fixed;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bgimg4 {
+  background: url(../images/screen4.png);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.final {
+  background: url(../images/finalPage.png);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.activity {
+  background: url(../images/background.png);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.btn {
+  width: 17%;
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+}
+.backbtn {
+  width: 8%;
+  position: absolute;
+  top: 4%;
+  left: 3%;
+}
+
+.card-img {
+  width: 150px;
+  height: 200px;
+}
+.card-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.card-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+#hideComponent {
+  visibility: hidden;
+}
+
+.progressContainer {
+  position: absolute;
+  right: 40%;
+}
+
+.card {
+  position: relative;
+  draggable: false;
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
+
+.progressBar {
+  position: absolute;
+  border-radius: 7px;
+  width: 40%;
+  right: 30%;
+  align-items: center;
+  height: 30px;
+  margin-left: -11.5%;
+  margin-top: 25px;
+  /* box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); */
+}
+.progressBar::-webkit-progress-bar {
+  background-color: #ffd422;
+  border-radius: 7px;
+}
+.progressBar::-webkit-progress-value {
+  background-color: #ffd422;
+  border-radius: 7px;
+  /* box-shadow: 1px 1px 5px 3px rgba(255, 0, 0, 0.8); */
+}
+progress::-moz-progress-bar {
+  /* style rules */
+}
