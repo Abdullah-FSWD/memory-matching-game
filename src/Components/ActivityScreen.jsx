@@ -97,7 +97,7 @@ const InitialBlueCards = [
 const ProgressBar = ({ value }) => {
   return (
     <div>
-      <progress value={value} max="100"></progress>
+      <progress className="progressBar" value={value} max="100"></progress>
       <img
         style={{
           position: "absolute",
@@ -203,10 +203,17 @@ const ActivityScreen = () => {
         <div className="progressContainer">
           <ProgressBar value={progress} />
         </div>
-        <h3>Moves Left:{step + 1} </h3>
         <Link to="/page4">
           <img className="backbtn" src={backbtn} />
         </Link>
+
+        <div
+          style={{
+            display: "absolute",
+            right: "30%",
+          }}>
+          <h3>Moves Left:{step + 1} </h3>
+        </div>
 
         <div className="card-container">
           <div className="redCard-grid card-grid">
