@@ -94,23 +94,23 @@ const InitialBlueCards = [
   // Add more cards as needed
 ];
 
-const ProgressBar = ({ value }) => {
-  return (
-    <div>
-      <progress className="progressBar" value={value} max="100"></progress>
-      <img
-        style={{
-          position: "absolute",
-          right: "45%",
-          height: "20px",
-          width: "20px",
-        }}
-        src={bnana}
-        alt="Banana"
-      />
-    </div>
-  );
-};
+// const ProgressBar = ({ value }) => {
+//   return (
+//     <div>
+//       <progress className="progressBar" value={value} max="100"></progress>
+//       <img
+//         style={{
+//           position: "absolute",
+//           right: "45%",
+//           height: "20px",
+//           width: "20px",
+//         }}
+//         src={bnana}
+//         alt="Banana"
+//       />
+//     </div>
+//   );
+// };
 
 const ActivityScreen = () => {
   const [redCards, setRedCards] = useState([]);
@@ -201,7 +201,7 @@ const ActivityScreen = () => {
     <div className="activityContainer">
       <div className="activity">
         <div className="progressContainer">
-          <ProgressBar value={progress} />
+          {/* <ProgressBar value={progress} /> */}
         </div>
         <Link to="/page4">
           <img className="backbtn" src={backbtn} />
@@ -209,8 +209,9 @@ const ActivityScreen = () => {
 
         <div
           style={{
-            display: "absolute",
-            right: "30%",
+            position: "absolute",
+            right: "45%",
+            marginTop: "40px",
           }}>
           <h3>Moves Left:{step + 1} </h3>
         </div>
